@@ -1,0 +1,29 @@
+const router = require('express').Router()
+const Client = require('../models/client')
+const Session = require('../models/session')
+
+router.get('/', async (req, res) => {
+    const allsession = await Session.find()
+    res.render('all-session.ejs')
+});
+
+router.get('/new', (req, res) => {
+    res.render('new-session.ejs')
+});
+
+router.post('/', async (req, res) => {
+    const newSession = await Session.create(req.body)
+    res.redirect('/sessions')
+});
+
+router.get('/:id', async (req, res) => {
+    const foundSession = Session.findById(req.params.id)
+});
+
+router.post('/delete/:id', async (req, res) => {
+    const deleted = Session.findByIdAndDelete(req.params.id)
+    res.redirect('/sessions')
+})
+
+
+module.exports = router
