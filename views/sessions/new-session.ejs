@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Session</title>
+</head>
+<body>
+    <h1>Create Session</h1>
+    <form action="/sessions" method="post">
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date">
+
+        <label for="location">Location:</label>
+        <input type="text" name="location" id="location">
+
+        <label for="price">Price:</label>
+        <input type="number" name="price" id="price">
+
+        <label for="notes">Notes:</label>
+        <input type="text" name="notes" id="notes">
+
+        <button>Submit</button>
+    </form>
+</body>
+</html>

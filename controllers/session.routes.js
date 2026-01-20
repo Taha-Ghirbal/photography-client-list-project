@@ -3,12 +3,12 @@ const Client = require('../models/client')
 const Session = require('../models/session')
 
 router.get('/', async (req, res) => {
-    const allsession = await Session.find()
-    res.render('all-session.ejs')
+    const allSessions = await Session.find()
+    res.render('sessions/all-sessions.ejs', {allSessions: allSessions})
 });
 
 router.get('/new', (req, res) => {
-    res.render('new-session.ejs')
+    res.render('sessions/new-session.ejs')
 });
 
 router.post('/', async (req, res) => {

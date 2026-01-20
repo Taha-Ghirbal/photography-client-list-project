@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clients</title>
+</head>
+<body>
+    <h1>Client List</h1>
+    <% allClients.forEach(oneClient => { %>
+        <div id="Client">
+            <h2>Name: <%= oneClient.clientName %></h2>
+            <h2>Email: <%= oneClient.email %></h2>
+            <h2>Phone: +973 <%= oneClient.phone %></h2>
+        </div>
+   <% }); %>
+</body>
+</html>
