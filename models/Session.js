@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const userSchema = new mongoose.Schema({
+const sessionSchema = new mongoose.Schema({
   date: {
     type: String,
     required: true,
