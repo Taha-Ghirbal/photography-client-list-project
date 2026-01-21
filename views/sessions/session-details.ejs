@@ -13,5 +13,10 @@
             <h2>Price: <%= foundSession.price %>BD</h2>
             <h2>Notes: <%= foundSession.notes %></h2>
     </div>
+
+    <form action="/sessions/delete/<%= foundSession._id %>" method="post">
+        <button>Delete</button>
+    </form>
+    <a href="/sessions/update/<%= foundSession._id %>">Edit</a>
 </body>
 </html>

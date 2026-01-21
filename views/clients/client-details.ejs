@@ -11,6 +11,12 @@
             <h2>Name: <%= foundClient.clientName %></h2>
             <h2>Email: <%= foundClient.email %></h2>
             <h2>Phone: +973 <%= foundClient.phone %></h2>
+
     </div>
+    
+    <form action="/clients/delete/<%= foundClient._id %>" method="post">
+        <button>Delete</button>
+    </form>
+    <a href="/clients/update/<%= foundClient._id %>">Edit</a>
 </body>
 </html>

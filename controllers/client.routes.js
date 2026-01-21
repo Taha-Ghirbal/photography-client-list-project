@@ -21,13 +21,18 @@ router.get('/:id', async (req, res) => {
     res.render('clients/client-details.ejs', {foundClient: foundClient})
 });
 
-app.post('/clients/update/:id', async (req, res) => {
+router.get('/update/:id', async (req, res) => {
+    const foundClient = await Client.findById(req.params.id)
+    res.render('clients/update-client.ejs', {foundClient: foundClient})
+});
+
+router.post('/update/:id', async (req, res) => {
     const updatedClient = await Client.findByIdAndUpdate(req.params.id, req.body)
     res.redirect('/clients')
 });
 
 router.post('/delete/:id', async (req, res) => {
-    const deletedClient = Client.findByIdAndDelete(req.params.id)
+    const deletedClient = await Client.findByIdAndDelete(req.params.id)
     res.redirect('/clients')
 });
 

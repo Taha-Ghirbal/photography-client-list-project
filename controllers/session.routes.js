@@ -21,8 +21,18 @@ router.get('/:id', async (req, res) => {
     res.render('sessions/session-details.ejs', {foundSession: foundSession})
 });
 
+router.get('/update/:id', async (req, res) => {
+    const foundSession = await Session.findById(req.params.id)
+    res.render('sessions/update-session.ejs', {foundSession: foundSession})
+});
+
+router.post('/update/:id', async (req, res) => {
+    const updatedSession = await Session.findByIdAndUpdate(req.params.id, req.body)
+    res.redirect('/sessions')
+});
+
 router.post('/delete/:id', async (req, res) => {
-    const deleted = Session.findByIdAndDelete(req.params.id)
+    const deleted = await Session.findByIdAndDelete(req.params.id)
     res.redirect('/sessions')
 })
 
