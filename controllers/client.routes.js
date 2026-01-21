@@ -17,7 +17,8 @@ router.post('/', async (req, res) => {
 });
 
 router.get('/:id', async (req, res) => {
-    const foundClient = Client.findById(req.params.id)
+    const foundClient = await Client.findById(req.params.id)
+    res.render('clients/client-details.ejs', {foundClient: foundClient})
 });
 
 router.post('/delete/:id', async (req, res) => {

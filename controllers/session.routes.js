@@ -17,7 +17,7 @@ router.post('/', async (req, res) => {
 });
 
 router.get('/:id', async (req, res) => {
-    const foundSession = Session.findById(req.params.id)
+    const foundSession = await Session.findById(req.params.id)
 });
 
 router.post('/delete/:id', async (req, res) => {
