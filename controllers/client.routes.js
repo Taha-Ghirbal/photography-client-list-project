@@ -21,9 +21,14 @@ router.get('/:id', async (req, res) => {
     res.render('clients/client-details.ejs', {foundClient: foundClient})
 });
 
+app.post('/clients/update/:id', async (req, res) => {
+    const updatedClient = await Client.findByIdAndUpdate(req.params.id, req.body)
+    res.redirect('/clients')
+});
+
 router.post('/delete/:id', async (req, res) => {
     const deletedClient = Client.findByIdAndDelete(req.params.id)
     res.redirect('/clients')
-})
+});
 
 module.exports = router

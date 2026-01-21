@@ -13,6 +13,7 @@
             <h2>Email: <%= oneClient.email %></h2>
             <h2>Phone: +973 <%= oneClient.phone %></h2>
             <a href="/clients/<%= oneClient.id %>">See Details</a>
+            <a href="/sessions/update/<%= oneClient.id %>">Edit</a>
         </div>
    <% }); %>
 </body>

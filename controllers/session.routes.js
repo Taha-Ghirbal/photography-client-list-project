@@ -18,6 +18,7 @@ router.post('/', async (req, res) => {
 
 router.get('/:id', async (req, res) => {
     const foundSession = await Session.findById(req.params.id)
+    res.render('sessions/session-details.ejs', {foundSession: foundSession})
 });
 
 router.post('/delete/:id', async (req, res) => {
