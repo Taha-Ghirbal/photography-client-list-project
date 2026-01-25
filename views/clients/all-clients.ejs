@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clients</title>
+    <link rel="stylesheet" href="/clients/all-clients.css">
 </head>
 <body>
     <h1>Client List</h1>
@@ -12,8 +13,10 @@
             <h2>Name: <%= oneClient.clientName %></h2>
             <h2>Email: <%= oneClient.email %></h2>
             <h2>Phone: +973 <%= oneClient.phone %></h2>
-            <a href="/clients/<%= oneClient.id %>">See Details</a>
+            <a class="details-button" href="/clients/<%= oneClient.id %>">See Details</a>
         </div>
    <% }); %>
+
+   <a class="add-client-button" href="/clients/new">Add New Client</a>
 </body>
 </html>

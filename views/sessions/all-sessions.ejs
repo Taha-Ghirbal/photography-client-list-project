@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sessions</title>
+    <link rel="stylesheet" href="/sessions/all-sessions.css">
 </head>
 <body>
     <h1>Session List</h1>
@@ -13,7 +14,7 @@
             <h2>Location: <%= oneSession.location %></h2>
             <h2>Price: <%= oneSession.price %>BD</h2>
             <h2>Notes: <%= oneSession.notes %></h2>
-            <a href="/sessions/<%= oneSession.id %>">See Details</a>
+            <a class="details-button" href="/sessions/<%= oneSession.id %>">See Details</a>
         </div>
    <% }); %>
 </body>
