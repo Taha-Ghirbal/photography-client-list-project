@@ -26,9 +26,16 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+form {
+    display: inline-block;
+}
+
 .delete-session-button {
+    width: 100px;
+    height: 40px;
     display: inline-block;
     margin-top: 10px;
+    font-size: 16px;
     padding: 10px 15px;
     background-color: #dc3545;
     color: #fff;
@@ -44,8 +51,12 @@ h1 {
 }
 
 .edit-session-button {
+    width: 100px;
+    height: 40px;
     display: inline-block;
+    text-align: center;
     margin-top: 10px;
+    margin-left: 10px;
     padding: 10px 15px;
     background-color: #ffc107;
     color: #fff;
@@ -56,4 +67,10 @@ h1 {
 .edit-session-button:hover {
     background-color: #d39e00;
     transition: 300ms;
+}
+
+#buttons {
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
 }

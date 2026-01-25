@@ -13,12 +13,12 @@
             <h2>Name: <%= foundClient.clientName %></h2>
             <h2>Email: <%= foundClient.email %></h2>
             <h2>Phone: +973 <%= foundClient.phone %></h2>
-
+        <div id="buttons">
+            <form action="/clients/delete/<%= foundClient._id %>" method="post">
+                <button class="delete-client-button">Delete</button>
+            </form>
+            <a class="edit-client-button" href="/clients/update/<%= foundClient._id %>">Edit</a>
+        </div>
     </div>
-    
-    <form action="/clients/delete/<%= foundClient._id %>" method="post">
-        <button class="delete-client-button">Delete</button>
-    </form>
-    <a class="edit-client-button" href="/clients/update/<%= foundClient._id %>">Edit</a>
 </body>
 </html>
