@@ -44,6 +44,8 @@ textarea {
 }
 
 button {
+    width: 100%;
+    margin: 14px auto 0 auto;
     display: inline-block;
     padding: 10px 15px;
     background-color: #28a745;
@@ -51,4 +53,9 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+    transition: 300ms;
 }
