@@ -9,7 +9,6 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-    padding: 20px;
 }
 
 h1 {
@@ -19,8 +18,8 @@ h1 {
 }
 
 #Session {
-    max-width: 600px;
-    margin: 20 auto;
+    max-width: 1000px;
+    margin: 20px auto;
     background: #fff;
     padding: 20px;
     border-radius: 5px;

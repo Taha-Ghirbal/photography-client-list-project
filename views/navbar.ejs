@@ -1,10 +1,17 @@
-<div>
-    <% if (user){ %>
-    <a href="/auth/sign-out">Logout</a>
+<link rel="stylesheet" href="/navbar.css">
 
-    <% } else{ %>
-    <a href="/auth/sign-up">Sign up</a>
-    <a href="/auth/sign-in">Login</a>
+<nav id="navbar">
+    <div class="nav-left">
+        <a class="navbar-object" id="navbar-clients" href="/clients">Clients</a>
+        <a class="navbar-object" id="navbar-sessions" href="/sessions">Sessions</a>
+    </div>
 
-    <% } %>
-</div>
+    <div class="nav-right">
+        <% if (user){ %>
+            <a class="navbar-object" id="navbar-signout" href="/auth/sign-out">Logout</a>
+        <% } else { %>
+            <a class="navbar-object" id="navbar-signup" href="/auth/sign-up">Sign up</a>
+            <a class="navbar-object" id="navbar-signin" href="/auth/sign-in">Login</a>
+        <% } %>
+    </div>
+</nav>

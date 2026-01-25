@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/sessions/all-sessions.css">
 </head>
 <body>
+    <%- include('../navbar') %>
     <h1>Session List</h1>
     <% allSessions.forEach(oneSession => { %>
         <div id="Session">
@@ -16,6 +17,7 @@
             <h2>Notes: <%= oneSession.notes %></h2>
             <a class="details-button" href="/sessions/<%= oneSession.id %>">See Details</a>
         </div>
-   <% }); %>
+    <% }); %>
+    <a class="add-session-button" href="/sessions/new">Add New Session</a>
 </body>
 </html>

@@ -9,7 +9,6 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-    padding: 20px;
 }
 
 h1 {
@@ -34,10 +33,22 @@ label {
 
 input[type="text"],
 input[type="date"],
+input[type="number"],
+input[type="password"],
 textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
