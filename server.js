@@ -73,12 +73,7 @@ app.use('/sessions', sessionController)
 
 // PROTECTED ROUTES:
 app.use(isSignedIn)
-// Everything under the user NEEDS to be logged in to se
-
-
-
-
-
+// Everything under the user NEEDS to be logged in to see
 
 
 app.listen(3000,()=>{

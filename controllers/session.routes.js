@@ -1,11 +1,15 @@
 const router = require('express').Router()
 const Client = require('../models/client')
 const Session = require('../models/session')
+const isSignedIn = require("../middleware/is-signed-in.js");
+
 
 router.get('/', async (req, res) => {
     const allSessions = await Session.find()
     res.render('sessions/all-sessions.ejs', {allSessions: allSessions})
 });
+
+router.use(isSignedIn)
 
 router.get('/new', (req, res) => {
     res.render('sessions/new-session.ejs')
