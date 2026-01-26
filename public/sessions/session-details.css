@@ -6,9 +6,13 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #0B1220;
+    color: #E6EEF3;
     line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #CDE2F7;
 }
 
 h1 {
@@ -20,10 +24,10 @@ h1 {
 #Session {
     max-width: 1000px;
     margin: 20px auto;
-    background: #fff;
+    background: #E1D9BC;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
 }
 
 form {
@@ -37,7 +41,7 @@ form {
     margin-top: 10px;
     font-size: 16px;
     padding: 10px 15px;
-    background-color: #dc3545;
+    background-color: #F87171;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -46,8 +50,8 @@ form {
 }
 
 .delete-session-button:hover {
-    background-color: #a71d2a;
-    transition: 300ms;
+    background-color: #EF4444;
+    transition: 200ms;
 }
 
 .edit-session-button {
@@ -58,15 +62,15 @@ form {
     margin-top: 10px;
     margin-left: 10px;
     padding: 10px 15px;
-    background-color: #ffc107;
-    color: #fff;
+    background-color: #6EE7B7;
+    color: #0B1220;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .edit-session-button:hover {
-    background-color: #d39e00;
-    transition: 300ms;
+    background-color: #34D399;
+    transition: 200ms;
 }
 
 #buttons {

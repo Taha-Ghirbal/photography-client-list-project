@@ -6,9 +6,13 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #0B1220;
+    color: #E6EEF3;
     line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #CDE2F7;
 }
 
 h1 {
@@ -20,25 +24,28 @@ h1 {
 #Session {
     max-width: 1000px;
     margin: 20px auto;
-    background: #fff;
+    background: #0F1724;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 22px rgba(2,6,23,0.6);
 }
 
 .details-button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background-color: #007BFF;
+    display: block;
+    width: auto;
+    max-width: 320px;
+    margin: 12px auto 1px auto;
+    padding: 10px 18px;
+    background-color: #60A5FA;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 6px;
+    text-align: center;
 }
 
 .details-button:hover {
-    background-color: #0056b3;
-    transition: 300ms;
+    background-color: #2563EB;
+    transition: 200ms;
 }
 
 .add-session-button {
@@ -50,7 +57,7 @@ h1 {
     min-width: 160px;
     max-width: calc(100% - 40px);
     padding: 12px 20px;
-    background-color: #28a745;
+    background-color: #6EE7B7;
     color: #fff;
     text-align: center;
     text-decoration: none;
@@ -60,6 +67,6 @@ h1 {
 }
 
 .add-session-button:hover {
-    background-color: #1e7e34;
-    transition: 300ms;
+    background-color: #059669;
+    transition: 200ms;
 }

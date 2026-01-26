@@ -8,19 +8,19 @@
 </head>
 <body>
     <%- include('../navbar') %>
-    <h1>Create Session</h1>
-    <form action="/sessions" method="post">
+    <h1>Edit Session</h1>
+    <form action="/Sessions/update/<%= foundSession.id %>" method="post">
         <label for="date">Date:</label>
-        <input type="date" name="date" id="date">
+        <input type="date" name="date" id="date" value="<%= foundSession.date %>">
 
         <label for="location">Location:</label>
-        <input type="text" name="location" id="location">
+        <input type="text" name="location" id="location" value="<%= foundSession.location %>">
 
         <label for="price">Price:</label>
-        <input type="number" name="price" id="price">
+        <input type="number" name="price" id="price" value="<%= foundSession.price %>">
 
         <label for="notes">Notes:</label>
-        <input type="text" name="notes" id="notes">
+        <input type="text" name="notes" id="notes" value="<%= foundSession.notes %>">
 
         <button>Submit</button>
     </form>
