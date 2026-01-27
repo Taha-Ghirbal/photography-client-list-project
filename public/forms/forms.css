@@ -6,13 +6,13 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #0B1220;
-    color: #E6EEF3;
+    background-color: #FBF7F3;
+    color: #222128;
     line-height: 1.6;
 }
 
 h1, h2, h3 {
-    color: #CDE2F7;
+    color: #222128;
 }
 
 h1 {
@@ -23,10 +23,11 @@ h1 {
 form {
     max-width: 600px;
     margin: 20px auto;
-    background: #0F1724;
+    background: #FFFFFF;
     padding: 20px;
-    border-radius: 6px;
-    box-shadow: 0 6px 22px rgba(2,6,23,0.6);
+    border-radius: 8px;
+    box-shadow: 0 8px 22px rgba(16,24,40,0.06);
+    border: 1px solid #EFE7DD;
 }
 
 label {
@@ -43,7 +44,7 @@ textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #E6DED1;
     border-radius: 5px;
 }
 
@@ -52,14 +53,14 @@ button {
     margin: 14px auto 0 auto;
     display: inline-block;
     padding: 10px 15px;
-    background-color: #6EE7B7;
-    color: #0B1220;
+    background-color: #B88A58;
+    color: #FFFFFF;
     border: none;
     border-radius: 6px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #34D399;
+    background-color: #8D6B4E;
     transition: 200ms;
 }

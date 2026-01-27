@@ -15,6 +15,17 @@ const sessionSchema = new mongoose.Schema({
   },
   notes: {
     type: String,
+    required: true,
+  },
+  status: {
+    type: String,
+    enum: ['Upcoming', 'Completed', 'Cancelled'],
+    required: true,
+  },
+  paymentStatus: {
+    type: String,
+    enum: ['Payed', 'Not Payed'],
+    required: true,
   },
 });
 

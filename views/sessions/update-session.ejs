@@ -19,8 +19,23 @@
         <label for="price">Price:</label>
         <input type="number" name="price" id="price" value="<%= foundSession.price %>">
 
+        <label for="pStatus">Payment Status:</label>
+        <select name="paymentStatus" id="pStatus">
+            <option value="select">Select</option>
+            <option value="Payed">Payed</option>
+            <option value="Not Payed">Not Payed</option>
+        </select>        
+
         <label for="notes">Notes:</label>
         <input type="text" name="notes" id="notes" value="<%= foundSession.notes %>">
+
+        <label for="status">Session Status:</label>
+        <select name="status" id="status">
+            <option value="select">Select</option>
+            <option value="Upcoming">Upcoming</option>
+            <option value="Completed">Completed</option>
+            <option value="Cancelled">Cancelled</option>
+        </select>
 
         <button>Submit</button>
     </form>

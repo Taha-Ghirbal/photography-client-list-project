@@ -13,7 +13,9 @@
             <h2>Date: <%= foundSession.date %></h2>
             <h2>Location: <%= foundSession.location %></h2>
             <h2>Price: <%= foundSession.price %>BD</h2>
+            <h2>Payment Status: <%= foundSession.paymentStatus %> </h2>
             <h2>Notes: <%= foundSession.notes %></h2>
+            <h2>Status: <%= foundSession.status %> </h2>
         <div id="buttons">
             <form action="/sessions/delete/<%= foundSession._id %>" method="post">
                 <button class="delete-session-button">Delete</button>
@@ -21,7 +23,5 @@
             <a class="edit-session-button" href="/sessions/update/<%= foundSession._id %>">Edit</a>
         </div>
     </div>
-
-
 </body>
 </html>

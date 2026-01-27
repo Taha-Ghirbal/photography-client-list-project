@@ -1,112 +1,123 @@
-  html, body {
-      height: 100%;
-  }
+html, body {
+    height: 100%;
+}
 
-  body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #0B1220;
-      color: #E6EEF3;
-      line-height: 1.6;
-  }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FBF7F3;
+    color: #222128;
+    line-height: 1.6;
+}
 
-  h1 {
-      font-size: 50px;
-      text-align: center;
-      margin: 40px 0 16px 0;
-      color: #CDE2F7;
-  }
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 40px 0 16px 0;
+    color: #222128;
+}
 
-  p {
-        font-size: 30px;
-        text-align: center;
-        max-width: 700px;
-        margin: 30px auto 40px auto;
-        color: rgba(230,238,243,0.85);
-  }
+p {
+    font-size: 18px;
+    text-align: center;
+    max-width: 700px;
+    margin: 24px auto 36px auto;
+    color: #6B645C;
+}
 
-  .hero {
-      max-width: 1100px;
-      margin: 40px auto 24px auto;
-      padding: 36px 28px;
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border-radius: 12px;
-      box-shadow: 0 8px 30px rgba(2,6,23,0.6);
-      border: 1px solid rgba(255,255,255,0.03);
-  }
+.hero {
+    max-width: 1100px;
+    margin: 40px auto 24px auto;
+    padding: 36px 28px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(16,24,40,0.06);
+    border: 1px solid #EFE7DD;
+}
 
-  .hero .title {
-      font-size: 36px;
-      margin: 0 0 8px 0;
-      color: #CDE2F7;
-      line-height: 1.05;
-  }
+.hero .title {
+    font-size: 36px;
+    margin: 0 0 8px 0;
+    color: #222128;
+    line-height: 1.05;
+}
 
-  .hero .lead {
-      margin: 6px 0 16px 0;
-      color: rgba(230,238,243,0.9);
-      font-size: 16px;
-  }
+.hero .lead {
+    margin: 6px 0 16px 0;
+    color: #6B645C;
+    font-size: 16px;
+}
 
-  .btn {
-      display: inline-block;
-      padding: 10px 16px;
-      border-radius: 8px;
-      font-weight: 600;
-      text-decoration: none;
-      text-align: center;
-  }
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+}
 
-  .btn-primary {
-      background-color: #60A5FA;
-      color: #07203A;
-      box-shadow: 0 6px 18px rgba(37,99,235,0.12);
-  }
+.btn-primary {
+    background-color: #B88A58;
+    color: #FFFFFF;
+}
 
-  .btn-primary:hover {
-      background-color: #2563EB;
-  }
+.btn-primary:hover {
+    background-color: #8D6B4E;
+}
 
-  .btn-accent {
-      background-color: #6EE7B7;
-      color: #06221A;
-  }
+.btn-accent {
+    background-color: #C9A67A;
+    color: #222128;
+}
 
-  .btn-danger {
-      background-color: #F87171;
-      color: #2B0B0B;
-  }
+.btn-danger {
+    background-color: #D46D5A;
+    color: #FFFFFF;
+}
 
-  .features {
-      max-width: 1100px;
-      margin: 18px auto 64px auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 18px;
-  }
+.features {
+    max-width: 1100px;
+    margin: 18px auto 64px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+}
 
-  .card {
-      background-color: #0F1724;
-      padding: 18px;
-      border-radius: 10px;
-      box-shadow: 0 8px 22px rgba(2,6,23,0.5);
-      border: 1px solid rgba(255,255,255,0.02);
-  }
+.card {
+    background-color: #FFFFFF;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 8px 22px rgba(16,24,40,0.06);
+    border: 1px solid #EFE7DD;
+}
 
-  .card h3 {
-      color: #CDE2F7;
-      margin: 0 0 8px 0;
-  }
+.card h3 {
+    color: #222128;
+    margin: 0 0 8px 0;
+}
 
-  .card p {
-      color: rgba(230,238,243,0.85);
-      margin: 0;
-  }
+.card p {
+    color: #6B645C;
+    margin: 0;
+}
 
-  .site-footer {
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 20px;
-      color: rgba(230,238,243,0.7);
-      text-align: center;
-      font-size: 14px;
-  }
+.site-footer {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    color: #6B645C;
+    text-align: center;
+    font-size: 14px;
+}
+
+.container {
+    display: inline-block;
+}
+
+#clients {
+    display: block;
+}
+
+#sessions {
+    display: block;
+}

@@ -14,7 +14,9 @@
             <h2>Date: <%= oneSession.date %></h2>
             <h2>Location: <%= oneSession.location %></h2>
             <h2>Price: <%= oneSession.price %>BD</h2>
+            <h2>Payment Status: <%= oneSession.paymentStatus %> </h2>
             <h2>Notes: <%= oneSession.notes %></h2>
+            <h2>Status: <%= oneSession.status %> </h2>
             <a class="details-button" href="/sessions/<%= oneSession.id %>">See Details</a>
         </div>
     <% }); %>
